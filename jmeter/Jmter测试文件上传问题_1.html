@@ -27,12 +27,12 @@
 </div>
 </div>
 </div>
-<h2 class="title-text">一、背景简述：</h2>
+<h2 class="title-text" id="1">一、背景简述：</h2>
 <div class="para" label-module="para">
 	<p style="text-indent: 2em">
 	<font>在用jmeter测试文件上传接口的时候，发现jmeter发送<b>post</b>报文的时候，配置报文头字段有一些坑，特记录下来以备后用。</font>
 </div>
-<h2 class="title-text">二、问题描述：</h2>
+<h2 class="title-text" id="2">二、问题描述：</h2>
 <div class="para" label-module="para">
 		<h3><p style="text-indent: 2em">按照网上的教程：</h3>
 		<p style="text-indent: 2em">
@@ -54,7 +54,7 @@
 		<p style="text-indent: 2em">
 		发现报文请求头里不包含属性<b><font color="ff0000">boundary</font></b>。
 </div>
-<h2 class="title-text">三、解决方式：</h2>
+<h2 class="title-text" id="3">三、解决方式：</h2>
 <div>
 	<p style="text-indent: 2em">
 	经过查询，<b>boundary</b>是上传文件时，随机生成的字符串放在协议头里，用来分隔文本的开始和结束，如上图的<b>postData</b>里，<font color="ff0000">6XvRd1YrORtf37_4bKpUg-Fps_M1ZIm4lCn</font>就是boundary的值。<br>
