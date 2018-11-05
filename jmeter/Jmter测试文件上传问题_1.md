@@ -1,6 +1,5 @@
 <html>
 <head>
-	<title>通过Jmeter上传文件</title>
 </head>
 <meta charset="utf-8">
 <body>
